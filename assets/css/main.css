@@ -1530,7 +1530,7 @@
 				}
 
 				#main article .close:active:before {
-					background-color: rgba(255, 255, 255, 0.175);
+					background-color: rgba(255, 0, 0, 0.175);
 				}
 
 		@media screen and (max-width: 736px) {
