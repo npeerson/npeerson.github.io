@@ -1613,10 +1613,6 @@
 		}
 
 		#imgrid {
-			-moz-transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter 0.5s ease, -moz-filter 0.5s ease;
-			-webkit-transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
-			-ms-transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter 0.5s ease, -ms-filter 0.5s ease;
-			transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter 0.5s ease, filter 0.5s ease;
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -1625,5 +1621,9 @@
 			-webkit-flex-wrap: wrap;
 			-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
-			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+		}
+
+		.poptrox-popup .nav-previous,
+		.poptrox-popup .nav-next {
+			background-size: 1em;
 		}
