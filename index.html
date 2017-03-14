@@ -52,12 +52,13 @@
 						<!-- Work -->
 							<article id="stills">
 								<h2 class="major">Stills</h2>
-								<span class="image main"><img src="images/boy_in_forest.jpg" alt="cinematography" /></span>
-								<span class="image main"><img src="images/flare_trees.jpg" alt="digital cinema" /></span>
-								<span class="image main"><img src="images/bokeh_mic.jpg" alt="Vancouver Film" /></span>
-								<span class="image main"><img src="images/sat_trees.jpg" alt="beautiful cinematography" /></span>
-								<span class="image main"><img src="images/youth_downtown.jpg" alt="Vancouver" /></span>
-								<span class="image main"><img src="images/crazyman.jpg" alt="indy cinematography" /></span>
+								<div id="imgrid">
+									<a href="images/boy_in_forest.jpg" class="image fit"><img src="images/boy_in_forest.jpg" alt="cinematography"/> </a>
+									<a href="images/flare_trees.jpg" class="image fit"><img src="images/flare_trees.jpg" alt="digital cinema cinematography" /></a>
+									<a href="images/bokeh_mic.jpg" class="image fit"><img src="images/bokeh_mic.jpg" alt="Vancouver Film" /></a>
+									<a href="images/sat_trees.jpg" class="image fit"><img src="images/sat_trees.jpg" alt="beautiful cinematography" /></a>
+									<a href="images/youth_downtown.jpg" class="image fit"><img src="images/youth_downtown.jpg" alt="Vancouver" /></a>
+							  </div>
 							</article>
 
 						<!-- About -->
@@ -339,8 +340,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<a href="mailto:something@nicholaspeerson.ca"><h5>nic@nicholaspeerson.ca</a> - 604 604 6044<h5> 
-						<p class="copyright">&copy; Nicholas F. Peerson 2017. Original Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<a href="mailto:something@nicholaspeerson.ca"><h5>nic@nicholaspeerson.ca</a> - 604 604 6044<h5>
+						<p> <p>
+						<p class="copyright">&copy; Nicholas F. Peerson 2017. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
@@ -353,6 +355,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script> $('#imgrid').poptrox() </script>
 
 	</body>
 </html>

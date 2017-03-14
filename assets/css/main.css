@@ -647,9 +647,27 @@
 		}
 
 		.image.fit {
-			display: block;
-			margin: 0 0 2rem 0;
-			width: 100%;
+			display: inline-block;
+			align-self: center;
+			margin: 5px;
+			width: calc(33% - 10px);
+
+		}
+
+		@media screen and (max-width: 960px) {
+
+			.image.fit {
+				width: calc(50% - 10px);
+			}
+
+		}
+
+		@media screen and (max-width: 560px) {
+
+			.image.fit {
+				width: calc(100% - 10px);
+			}
+
 		}
 
 			.image.fit img {
@@ -658,7 +676,7 @@
 
 		.image.main {
 			display: block;
-			margin: 1.5rem 0;
+			margin: 2.5rem 0;
 			width: 100%;
 		}
 
@@ -666,7 +684,7 @@
 				width: 100%;
 			}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 960px) {
 
 			.image.main {
 				margin: 1.25rem 0;
@@ -674,7 +692,7 @@
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 560px) {
 
 			.image.main {
 				margin: 1rem 0;
@@ -1476,9 +1494,9 @@
 			-webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
 			-ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
-			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
+			padding: 4.5rem 2rem 1.5rem 2rem ;
 			position: relative;
-			width: 50rem;
+			width: 60rem;
 			max-width: 100%;
 			background-color: rgba(25, 25, 25, 0.85);
 			border-radius: 2px;
@@ -1536,7 +1554,7 @@
 		@media screen and (max-width: 736px) {
 
 			#main article {
-				padding: 3.5rem 2rem 0.5rem 2rem ;
+				padding: 3.5rem 1.5rem 0.5rem 1.5rem ;
 			}
 
 				#main article .close:before {
@@ -1552,7 +1570,7 @@
 		@media screen and (max-width: 480px) {
 
 			#main article {
-				padding: 3rem 1.5rem 0.5rem 1.5rem ;
+				padding: 3rem 1rem 0.5rem 1rem ;
 			}
 
 		}
@@ -1592,4 +1610,20 @@
 
 		body.is-loading #footer {
 			opacity: 0;
+		}
+
+		#imgrid {
+			-moz-transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter 0.5s ease, -moz-filter 0.5s ease;
+			-webkit-transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
+			-ms-transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter 0.5s ease, -ms-filter 0.5s ease;
+			transition: -moz-filter 0.5s ease, -webkit-filter 0.5s ease, -ms-filter 0.5s ease, filter 0.5s ease;
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 		}
