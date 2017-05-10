@@ -597,7 +597,7 @@
 /* Image */
 
 	.image {
-		border-radius: 4px;
+		border-radius: 10px;
 		border: 0;
 		display: inline-block;
 		position: relative;
@@ -622,7 +622,7 @@
 		}
 
 		.image img {
-			border-radius: 12px;
+			border-radius: 0px;
 			display: block;
 		}
 
@@ -650,23 +650,6 @@
 			display: inline-block;
 			align-self: center;
 			margin: 5px;
-			width: calc(33% - 10px);
-
-		}
-
-		@media screen and (max-width: 960px) {
-
-			.image.fit {
-				width: calc(50% - 10px);
-			}
-
-		}
-
-		@media screen and (max-width: 560px) {
-
-			.image.fit {
-				width: calc(100% - 10px);
-			}
 
 		}
 
