@@ -1072,10 +1072,10 @@
 			-webkit-transition: background-color 2.5s ease-in-out;
 			-ms-transition: background-color 2.5s ease-in-out;
 			transition: background-color 2.5s ease-in-out;
-			-moz-transition-delay: 0s;
-			-webkit-transition-delay: 0s;
-			-ms-transition-delay: 0s;
-			transition-delay: 0s;
+			-moz-transition-delay: .5s;
+			-webkit-transition-delay: .5s;
+			-ms-transition-delay: .5s;
+			transition-delay: 1s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
 			background-size: auto, 256px 256px;
 			background-position: center, center;
@@ -1105,10 +1105,10 @@
 			-webkit-transform: scale(1.05);
 			-ms-transform: scale(1.05);
 			transform: scale(1.05);
-			-moz-filter: blur(0.45rem) contrast(1.15);
-			-webkit-filter: blur(0.45rem) contrast(1.15);
-			-ms-filter: blur(0.45rem) contrast(1.15);
-			filter: blur(0.45rem) contrast(1.15);
+			-moz-filter: blur(0.45rem);
+			-webkit-filter: blur(0.45rem);
+			-ms-filter: blur(0.45rem);
+			filter: blur(0.45rem);
 		}
 
 		body.is-loading #bg:before {
