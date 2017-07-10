@@ -1092,7 +1092,7 @@
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 1s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 1s ease-in-out;
 			transition: transform 0.5s ease-in-out, filter 1s ease-in-out;
-			background-image: url("../../images/bg/skytrain.jpg");
+			background-image: url("../../images/bg/leaf.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1610,4 +1610,18 @@
 		.poptrox-popup .nav-next {
 			background-size: 1em;
 			background-image: url("");
+		}
+		.vimeobox {
+  		position: relative;
+  		height: 0;
+  		overflow: hidden;
+			padding-bottom: 56.25%;
+		}
+
+		.vimeobox iframe {
+  		position: absolute;
+  		top:0;
+  		left: 0;
+  		width: 100%;
+  		height: 100%;
 		}
