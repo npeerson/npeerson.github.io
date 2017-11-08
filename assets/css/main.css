@@ -1076,7 +1076,7 @@
 			-webkit-transition-delay: .5s;
 			-ms-transition-delay: .5s;
 			transition-delay: 1s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.3), rgba(19, 21, 25, 0.3)), url("../../images/overlay.png");
 			background-size: auto, 256px 256px;
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
@@ -1092,7 +1092,7 @@
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 1s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 1s ease-in-out;
 			transition: transform 0.5s ease-in-out, filter 1s ease-in-out;
-			background-image: url("../../images/bg/skytrain.jpg");
+			background-image: url("../../images/bg/fall.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
