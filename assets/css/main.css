@@ -1675,7 +1675,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ee5f81 !important;
+			color: #6b5b95 !important;
 		}
 
 	strong, b {
@@ -1896,8 +1896,8 @@
 			}
 
 			.icon.style2:hover {
-				color: #ee5f81;
-				border-color: #ee5f81;
+				color: #6b5b95;
+				border-color: #6b5b95;
 			}
 
 			.icon.style2:active {
@@ -2177,8 +2177,8 @@
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-bottom-color: #ee5f81;
-			box-shadow: inset 0 -1px 0 0 #ee5f81;
+			border-bottom-color: #6b5b95;
+			box-shadow: inset 0 -1px 0 0 #6b5b95;
 		}
 
 	.select-wrapper {
@@ -2288,8 +2288,8 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #ee5f81;
-			box-shadow: 0 0 0 1px #ee5f81;
+			border-color: #6b5b95;
+			box-shadow: 0 0 0 1px #6b5b95;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2509,8 +2509,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			color: #ee5f81 !important;
-			box-shadow: inset 0 0 0 2px #ee5f81;
+			color: #6b5b95 !important;
+			box-shadow: inset 0 0 0 2px #6b5b95;
 		}
 
 		input[type="submit"]:active,
@@ -2552,7 +2552,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #ee5f81;
+				background-color: #6b5b95;
 			}
 
 			input[type="submit"].special:active,
@@ -2560,7 +2560,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #ee5f81;
+				background-color: #6b5b95;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2855,7 +2855,7 @@
 /* Header */
 
 	#header {
-		padding: 8em 0 0.1em 0 ;
+		padding: 2.5em 0 0.1em 0 ;
 	}
 
 		#header .logo {
@@ -2930,7 +2930,7 @@
 						-webkit-tap-highlight-color: transparent;
 						width: 4em;
 						text-indent: 4em;
-						font-size: 1em;
+						font-size: .em;
 						overflow: hidden;
 						padding: 0;
 						white-space: nowrap;
@@ -3346,7 +3346,7 @@
 		width: 100%;
 		max-width: 68em;
 		margin: 0 auto;
-		padding: 0 2.5em;
+		padding: 0 6.5em;
 	}
 
 		@media screen and (max-width: 736px) {
