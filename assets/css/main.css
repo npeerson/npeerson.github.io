@@ -3365,7 +3365,6 @@
 	height: 0;
 	overflow: hidden;
 	padding-bottom: 56.25%;
-	margin: 0 0 3em 0;
 }
 
 .vimeobox iframe {
@@ -3375,4 +3374,13 @@
 	width: 100%;
 	height: 100%;
 	padding: 0em;
+}
+
+.subspan {
+	font-weight: 900;
+	line-height: 1.5;
+	margin: 0 0 2em 0;
+	text-transform: uppercase;
+	letter-spacing: 0.35em;
+	margin: 0em 0 0 0em;
 }
