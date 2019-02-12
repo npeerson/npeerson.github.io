@@ -313,7 +313,7 @@
 	.\-1u {
 		margin-left: 8.33333%;
 	}
-
+/*
 	@media screen and (max-width: 1680px) {
 
 		.row > * {
@@ -528,6 +528,7 @@
 		}
 
 	}
+
 
 	@media screen and (max-width: 1280px) {
 
@@ -1603,7 +1604,7 @@
 		}
 
 	}
-
+*/
 /* Basic */
 
 	@-ms-viewport {
