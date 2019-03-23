@@ -2621,7 +2621,7 @@
 				.tiles article > .image img {
 					display: block;
 					width: 100%;	
-					-webkit-filter:grayscale(1)
+					-webkit-filter:grayscale(1);
 					filter:grayscale(1);
 					-webkit-transition: 5s filter ease;
 					-moz-transition: 5s filter ease;
