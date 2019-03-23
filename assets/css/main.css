@@ -2621,9 +2621,7 @@
 				.tiles article > .image img {
 					display: block;
 					width: 100%;	
-					-webkit-filter:grayscale(1);
 					filter:grayscale(1);
-					-webkit-transition: 5s -webkit-filter ease;
 					transition: 5s filter ease;					
 				}
 
@@ -2739,9 +2737,7 @@
 
 
 			body:not(.is-touch) .tiles article:hover > .image img {
-				-webkit-filter:grayscale(0);
 				filter:grayscale(0);
-				-webkit-transition: 1s -webkit-filter ease;
 				transition: 1s filter ease;
 			}
 
