@@ -2623,6 +2623,10 @@
 					width: 100%;
 					filter:grayscale(1);
 					transition: 5s filter ease;
+					-webkit-transition: 5s filter ease;
+					-moz-transition: 5s filter ease;
+					-o-transition: 5s filter ease;
+					
 				}
 
 				.tiles article > .image:before {
@@ -2739,6 +2743,9 @@
 			body:not(.is-touch) .tiles article:hover > .image img {
 				filter:grayscale(0);
 				transition: 1s filter ease;
+				-webkit-transition: 1s filter ease;
+				-moz-transition: 1s filter ease;
+				-o-transition: 1s filter ease;
 			}
 
 
