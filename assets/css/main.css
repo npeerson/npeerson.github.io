@@ -2620,9 +2620,9 @@
 
 				.tiles article > .image img {
 					display: block;
-					width: 100%;
+					width: 100%;	
 					filter:grayscale(1);
-					transition: 5s filter ease;
+					transition: 5s filter ease;					
 				}
 
 				.tiles article > .image:before {
