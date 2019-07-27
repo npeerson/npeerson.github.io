@@ -114,6 +114,7 @@ a:active {
 @keyframes fadein {
   from {opacity: 0;}
   to {opacity: 1;}
+
 }
 
 @keyframes shrinkin {
@@ -121,9 +122,9 @@ a:active {
   to {transform: scale(1);}
 }
 
-/* PHONES */
+/* PHONES/SQUISHnSCRUNCH */
 
-@media screen and (max-width:1280px) {
+@media screen and (min-height:1600px) {
 
   body {
     margin: 2.5% 5%;
@@ -132,12 +133,21 @@ a:active {
   .frame img {
     filter: grayscale(0);
   }
-
+  h1 {
+    font-size: 4em;
+  }
 
   p {
     font-size: 1.5em;
   }
 
+}
+
+@media screen and (max-width:512px) {
+
+  body {
+    margin: 2.5% 5%;
+  }
 }
 
   .vimeobox {
