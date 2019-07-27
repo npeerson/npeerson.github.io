@@ -124,7 +124,7 @@ a:active {
 
 /* PHONES/SQUISHnSCRUNCH */
 
-@media screen and (any-hover:none) {
+@media screen and (any-hover:none), (pointer: coarse) {
 
   .frame img {
     filter: grayscale(0);
