@@ -21,30 +21,32 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 
-#header {
+header {
   width:100%;
   height: auto;
   padding-bottom: 5%;
   overflow: auto;
 }
-#header * {
+header * {
   display: inline;
 }
 
-#content {
+main {
   clear:both;
   text-align: center;
+  display:block;
+
 }
 
-#content * {
+main * {
   display:block;
 }
 
-#footer {
+footer {
   padding: 2.5% 0%;
 }
 
-#footer * {
+footer * {
   display: inline;
 }
 
@@ -78,6 +80,7 @@ transform: scale(1.05);
 img {
   width: 100%;
   padding-bottom: 2.5%;
+
 }
 
 /* a */
@@ -109,7 +112,13 @@ a:active {
   text-align: right;
 }
 
-
+.inlinecontent {
+  padding-bottom: 2.5%;
+}
+.inlinecontent * {
+  width: 100%;
+  display: inline;
+}
 /* KEYFRAMES */
 
 @keyframes fadein {
@@ -137,6 +146,15 @@ a:active {
 
   body {
     margin: 2.5% 5%;
+    font-size: 90%;
+  }
+
+  #header * {
+    display: block;
+  }
+
+  #footer * {
+    display: block;
   }
 
 
