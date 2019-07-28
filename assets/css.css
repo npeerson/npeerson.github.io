@@ -1,10 +1,12 @@
 html {
   animation-name: fadein;
   animation-duration: 1.5s;
+  font-size: 100%;
 }
 
 body {
   margin: 5% 15%;
+  font-size: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -13,14 +15,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   letter-spacing: 1px;
   color: dimgrey;
   padding-bottom: 2.5%;
-
-}
-
-h1 {
-  font-size: 2em;
   line-height: 1.5;
   margin: 0;
+
 }
+
 
 #header {
   width:100%;
@@ -41,10 +40,12 @@ h1 {
   display:block;
 }
 
+#footer {
+  padding: 2.5% 0%;
+}
 
 #footer * {
   display: inline;
-  padding-top: 2.5%;
 }
 
 .frame {
@@ -137,6 +138,8 @@ a:active {
   body {
     margin: 2.5% 5%;
   }
+
+
 }
 
 
