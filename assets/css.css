@@ -103,6 +103,13 @@ a:active {
   color:white;
 }
 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .alignleft {
   float:left;
   text-align: left;
