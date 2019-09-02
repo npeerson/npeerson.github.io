@@ -7,13 +7,16 @@ html {
 body {
   margin: 2.5% 15%;
   font-size: 1rem;
+  background-attachment: fixed;
+  background-size: 100%;
+
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
   font-family: arial;
   font-weight: 200;
   letter-spacing: 1px;
-  color: dimgrey;
+  color: white;
   padding-bottom: 2.5%;
   line-height: 1.5;
   margin: 0;
@@ -136,6 +139,14 @@ ul {
 @keyframes shrinkin {
   from {transform: scale(.95);}
   to {transform: scale(1);}
+}
+
+@keyframes rainbow {
+  0% {color: dimgrey;}
+  25% {color: red;}
+  50% {color: green;}
+  75% {color: blue;}
+  100% {color: dimgrey;}
 }
 
 /* PHONES/SQUISHnSCRUNCH */
