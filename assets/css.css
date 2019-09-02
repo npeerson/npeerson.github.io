@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-family: arial;
   font-weight: 200;
   letter-spacing: 1px;
-  color: white;
+  color: dimgrey;
   padding-bottom: 2.5%;
   line-height: 1.5;
   margin: 0;
@@ -88,11 +88,11 @@ img {
 
 /* a */
 a::before {
-  color: white;
+  color: dimgrey;
 }
 a {
   text-decoration: none;
-  color: white;
+  color: dimgrey;
   transition: color .25s;
 }
 
