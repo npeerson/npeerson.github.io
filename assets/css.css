@@ -5,11 +5,12 @@ html {
 }
 
 body {
-  margin: 2.5% 15%;
+  margin: 5% 15%;
   font-size: 1rem;
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
@@ -91,7 +92,7 @@ a::before {
 }
 a {
   text-decoration: none;
-  color: dimgrey;
+  color: white;
   transition: color .25s;
 }
 
