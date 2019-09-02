@@ -1,6 +1,5 @@
 html {
-  animation-name: fadein;
-  animation-duration: 2s;
+  animation: fadein 2s;
   font-size: 100%;
 }
 
@@ -93,12 +92,12 @@ a::before {
 a {
   text-decoration: none;
   color: dimgrey;
-  transition: color .25s;
+  transition: color .1s;
 }
 
 a:hover {
   color:black;
-  animation: rainbow .1s steps(1);
+  animation: rainbow .25s steps(1);
 }
 
 a:active {
