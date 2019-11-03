@@ -181,7 +181,8 @@ ul {
   	position: relative;
   	height: 0;
   	overflow: hidden;
-  	padding-bottom: 60%;
+  /*	padding-bottom: 60%; */
+    margin-bottom: 2.5%;
   	opacity: 1
 
   }
