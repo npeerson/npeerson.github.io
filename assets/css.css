@@ -1,5 +1,5 @@
 html {
-  animation: fadein 2s;
+  animation: fadein .5s;
   font-size: 100%;
   cursor: crosshair;
 }
@@ -145,7 +145,7 @@ ul {
 
 }
 
-@keyframes shrinkin {
+@keyframes growin {
   from {transform: scale(.95);}
   to {transform: scale(1);}
 }
