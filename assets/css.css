@@ -146,7 +146,7 @@ ul {
 }
 
 @keyframes growin {
-  from {transform: scale(.95);}
+  from {transform: scale(.9);}
   to {transform: scale(1);}
 }
 
