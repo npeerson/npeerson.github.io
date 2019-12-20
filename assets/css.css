@@ -77,7 +77,7 @@ transition: 0.5s;
 
 .frame img:hover {
   filter: grayscale(0);
-  transition: filter 1s;
+  transition: filter .5s;
 }
 
 img {
