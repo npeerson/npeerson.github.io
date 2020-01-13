@@ -11,6 +11,9 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-color: white;
 }
 
@@ -157,6 +160,7 @@ ul {
   100% {color: black;}
 }
 
+
 /* PHONES/SQUISHnSCRUNCH */
 
 @media screen and (any-hover:none), (pointer: coarse) {
@@ -185,6 +189,7 @@ ul {
 
 }
 
+/* VIMEO */
 
   .vimeobox {
   	position: relative;
