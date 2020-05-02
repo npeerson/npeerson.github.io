@@ -17,26 +17,14 @@ body {
   background-color: white;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, b, i {
-  font-family: arial;
-  font-weight: 200;
-  letter-spacing: 1px;
-  color: dimgrey;
-  padding-bottom: 2.5%;
-  line-height: 1.5;
-  margin: 0;
-  cursor: crosshair;
-}
-
-
 header {
   width:100%;
   height: auto;
-  padding-bottom: 5%;
-  overflow: auto;
+  margin-bottom: 5%;
+  overflow: hidden;
 }
 header * {
-  display: inline;
+  display: inline-block;
 }
 
 main {
@@ -50,11 +38,22 @@ main * {
 }
 
 footer {
-  padding: 2.5% 0%;
+  margin: 2.5% 0%;
 }
 
 footer * {
   display: inline;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: arial;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: dimgrey;
+  padding-bottom: 2.5%;
+  line-height: 1.5;
+  margin: 0;
+  cursor: crosshair;
 }
 
 .frame {
@@ -80,7 +79,7 @@ transition: 0.5s;
 
 .frame img:hover {
   filter: grayscale(0);
-  transition: filter .5s;
+  transition: filter 1s;
 }
 
 img {
@@ -138,6 +137,13 @@ ul {
 .inlinecontent * {
   width: 100%;
   display: inline;
+}
+
+.middle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* KEYFRAMES */
