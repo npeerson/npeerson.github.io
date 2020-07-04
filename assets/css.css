@@ -45,7 +45,7 @@ footer * {
   display: inline;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, form * {
   font-family: arial;
   font-weight: 200;
   letter-spacing: 1px;
@@ -54,6 +54,26 @@ h1, h2, h3, h4, h5, h6, p, a {
   line-height: 1.5;
   margin: 0;
   cursor: crosshair;
+}
+
+form * {
+  font-size: 1rem;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 1%;
+  border: none;
+  border-bottom: 1px solid dimgrey;
+  resize: vertical;
+}
+
+form button {
+  width: auto;
+  border: 1px solid dimgrey;
+  padding: 1%;
+}
+
+form *:focus {
+  outline: none;
 }
 
 .frame {
