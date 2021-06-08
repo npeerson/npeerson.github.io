@@ -1,4 +1,4 @@
-<html>
+<?php echo "
     <div class="alignleft">
     <h1><a href=me>nic peerson</a></h1>
   </div>
@@ -9,3 +9,4 @@
     <h1><a href=contact>contact</a></h1>
   </div>
 </html>
+" ?>
