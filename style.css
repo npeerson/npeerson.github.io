@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap');
+
+
+html {
+  animation: fadein 5s;
+  font-size: 100%;
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+body {
+	font-family: 'IM Fell Double Pica SC', sans-serif;
+	background-color: white;
+}
+
+
+body * {
+	transition-duration: 1s;
+}
+
+
+
+header, nav {
+	display: flex;
+	align-items: center;
+	padding: 16px 18px;
+	background-color: white;
+	justify-content: center;
+}
+
+header { flex-flow: row nowrap; }
+
+h1 {
+	flex: 0 0 auto;
+	font-size: 4em;
+	font-weight: 400;
+	margin: 0;
+}
+
+
+nav {
+	flex-flow: row wrap;
+	justify-content: space-around;
+	border-style: solid none;
+	border-width: 1px;
+}
+
+#filter-bar {
+	flex: 0 1 auto;
+	flex-flow: row wrap;
+	display: flex;
+	justify-content: center;
+
+}
+
+
+
+p, a, li {
+	font-size: 1em;
+	color: black;
+	margin: 0;
+	text-decoration: none;
+}
+
+
+main {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	justify-content: center;
+}
+
+
+
+
+/*FILTER*/
+
+input[type="radio"] {
+	display: none;
+}
+
+/* filter labels */
+
+.filters {
+	flex: 0 0 auto;
+	padding: 0;
+	margin:0
+}
+
+.filters * {
+  	display: inline-block;
+}
+
+.filters label {
+ 	cursor: pointer;
+}
+
+.filters label:hover, a:hover {
+  color: #9955cc;
+}
+
+.filters label:active, a:active {
+  color: #ffffff;
+}
+[value="ALL"]:checked ~ nav #filter-bar [for="ALL"],
+[value="PHOTO"]:checked ~ nav #filter-bar [for="PHOTO"],
+[value="arts"]:checked ~ nav #filter-bar [for="arts"],
+[value="portrait"]:checked ~ nav #filter-bar [for="portrait"],
+[value="abstract"]:checked ~ nav #filter-bar [for="abstract"],
+[value="VIDEO"]:checked ~ nav #filter-bar [for="VIDEO"],
+[value="scripted"]:checked ~ nav #filter-bar [for="scripted"],
+[value="unscripted"]:checked ~ nav #filter-bar [for="unscripted"],
+[value="music"]:checked ~ nav #filter-bar [for="music"]
+ {
+	color: #777766;
+}
+
+/*thumb */
+.thumb {
+	position: relative;
+	margin: 16px;
+}
+
+.thumb img {
+	max-height: 46vh;
+	max-width: 100%;
+	margin: 0;
+}
+
+.thumb .caption {
+	position: absolute;
+	max-width: calc(90% - 32px);
+	bottom: 16px;;
+	right: 12px;
+	padding: 1em;
+	margin: 0;
+	background-color: #ffffff;
+	opacity: 0%;
+	transition-duration: 1s;
+}
+
+.thumb:hover .caption {
+	opacity: 100%;
+}
+
+.thumb {
+	opacity: 1;
+	transition-duration: 1s;
+
+}
+
+[value="PHOTO"]:checked ~ main .thumb:not([data-tag~="PHOTO"]),
+[value="arts"]:checked ~ main .thumb:not([data-tag~="arts"]),
+[value="portrait"]:checked ~ main .thumb:not([data-tag~="portrait"]),
+[value="abstract"]:checked ~ main .thumb:not([data-tag~="abstract"]),
+[value="VIDEO"]:checked ~ main .thumb:not([data-tag~="VIDEO"]),
+[value="scripted"]:checked ~ main .thumb:not([data-tag~="scripted"]),
+[value="unscripted"]:checked ~ main .thumb:not([data-tag~="unscripted"]),
+[value="music"]:checked ~ main .thumb:not([data-tag~="music"]) {
+	display: none;
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+header {
+	flex-flow: row wrap;
+	justify-content: center;}
+
+nav {
+	flex-flow: column nowrap;
+}
+
+#split { display: none; }
+
+.thumb img { max-height: 80vh; }
+}
