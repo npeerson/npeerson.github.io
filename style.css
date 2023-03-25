@@ -3,7 +3,7 @@
 
 
 html {
-  animation: fadein 5s;
+  animation: fadein 8s;
   font-size: 100%;
 }
 
@@ -60,7 +60,7 @@ nav {
 
 
 p, a, li {
-	font-size: 1em;
+	font-size: 1.2em;
 	color: black;
 	margin: 0;
 	text-decoration: none;
@@ -126,7 +126,7 @@ input[type="radio"] {
 }
 
 .thumb img {
-	max-height: 46vh;
+	max-height: 80vh;
 	max-width: 100%;
 	margin: 0;
 }
@@ -178,5 +178,4 @@ nav {
 
 #split { display: none; }
 
-.thumb img { max-height: 80vh; }
 }
