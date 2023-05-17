@@ -1,9 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&display=swap');
 
 
 html {
-  animation: fadein 8s;
+  animation: fadein 5s;
   font-size: 100%;
 }
 
@@ -15,19 +16,13 @@ html {
 body {
 	font-family: 'IM Fell Double Pica SC', sans-serif;
 	background-color: white;
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center
 }
-
-
-body * {
-	transition-duration: 1s;
-}
-
-
 
 header, nav {
+  width: 768px;
 	display: flex;
 	align-items: center;
 	padding: 16px 18px;
@@ -35,9 +30,20 @@ header, nav {
 	justify-content: center;
 }
 
-header { 
-	flex-flow: row nowrap;
-	max-width: 1024px;
+header { flex-flow: row nowrap; }
+
+nav {
+	flex-flow: row wrap;
+	justify-content: space-around;
+	border-style: solid none;
+	border-width: 1px;
+}
+
+main {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	justify-content: center;
 }
 
 h1 {
@@ -47,42 +53,14 @@ h1 {
 	margin: 0;
 }
 
-
-nav {
-	flex-flow: row wrap;
-	width: 768px;
-	justify-content: space-around;
-	border-style: solid none;
-	border-width: 1px;
-}
-
-#filter-bar {
-	flex: 0 1 auto;
-	flex-flow: row wrap;
-	display: flex;
-	justify-content: center;
-
-}
-
-
-
-p, a, li {
-	font-size: 1.2em;
+p, a, li, label, figcaption {
+  display: inline;
+	font-size: 1em;
 	color: black;
 	margin: 0;
 	text-decoration: none;
+  transition-duration: .5s;
 }
-
-
-main {
-	display: flex;
-	flex-flow: row wrap;
-	width: 100%;
-	justify-content: center;
-}
-
-
-
 
 /*FILTER*/
 
@@ -92,99 +70,122 @@ input[type="radio"] {
 
 /* filter labels */
 
-.filters {
-	flex: 0 0 auto;
-	padding: 0;
-	margin:0
+.fgroup {
+  display: inline;
 }
 
-.filters * {
-  	display: inline-block;
+label:hover {
+  color: #667788;
 }
 
-.filters label {
- 	cursor: pointer;
-}
-
-.filters label:hover, a:hover {
-  color: #9955cc;
-}
-
-.filters label:active, a:active {
-  color: #ffffff;
-}
-[value="ALL"]:checked ~ nav #filter-bar [for="ALL"],
-[value="PHOTO"]:checked ~ nav #filter-bar [for="PHOTO"],
-[value="arts"]:checked ~ nav #filter-bar [for="arts"],
-[value="portrait"]:checked ~ nav #filter-bar [for="portrait"],
-[value="abstract"]:checked ~ nav #filter-bar [for="abstract"],
-[value="VIDEO"]:checked ~ nav #filter-bar [for="VIDEO"],
-[value="scripted"]:checked ~ nav #filter-bar [for="scripted"],
-[value="unscripted"]:checked ~ nav #filter-bar [for="unscripted"],
-[value="music"]:checked ~ nav #filter-bar [for="music"]
+[value="PHOTO"]:checked ~ nav [for="PHOTO"],
+[value="performance"]:checked ~ nav [for="performance"],
+[value="portraiture"]:checked ~ nav [for="portraiture"],
+[value="abstraction"]:checked ~ nav [for="abstraction"],
+[value="VIDEO"]:checked ~ nav [for="VIDEO"],
+[value="scripted"]:checked ~ nav [for="scripted"],
+[value="unscripted"]:checked ~ nav [for="unscripted"],
+[value="music"]:checked ~ nav [for="music"],
+[value="about"]:checked ~ nav [for="about"],
+[value="contact"]:checked ~ nav [for="contact"]
  {
-	color: #777766;
+	color: #7766cc;
 }
 
-/*thumb */
-.thumb {
+/*gallery */
+
+figure {
 	position: relative;
 	margin: 16px;
 }
 
-.thumb img {
-	max-height: 80vh;
+figure img {
+	max-height: 75vh;
 	max-width: 100%;
 	margin: 0;
 }
 
-.thumb .caption {
-	position: absolute;
-	max-width: calc(90% - 32px);
-	bottom: 16px;;
-	right: 12px;
-	padding: 1em;
-	margin: 0;
-	background-color: #ffffff;
-	opacity: 0%;
-	transition-duration: 1s;
+figure figcaption {
+  position: absolute;
+  max-width: 30em;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  margin: 1em .5em;
+  background-color: #ffffff;
+  opacity: 0%;
+  transition-duration: 1s;
 }
 
-.thumb:hover .caption {
+figure:hover figcaption {
 	opacity: 100%;
 }
 
-.thumb {
+figure {
 	opacity: 1;
 	transition-duration: 1s;
 
 }
 
-[value="PHOTO"]:checked ~ main .thumb:not([data-tag~="PHOTO"]),
-[value="arts"]:checked ~ main .thumb:not([data-tag~="arts"]),
-[value="portrait"]:checked ~ main .thumb:not([data-tag~="portrait"]),
-[value="abstract"]:checked ~ main .thumb:not([data-tag~="abstract"]),
-[value="VIDEO"]:checked ~ main .thumb:not([data-tag~="VIDEO"]),
-[value="scripted"]:checked ~ main .thumb:not([data-tag~="scripted"]),
-[value="unscripted"]:checked ~ main .thumb:not([data-tag~="unscripted"]),
-[value="music"]:checked ~ main .thumb:not([data-tag~="music"]) {
+[value="init"]:checked ~ main figure:not([data-tag~="init"]),
+[value="PHOTO"]:checked ~ main figure:not([data-tag~="PHOTO"]),
+[value="performance"]:checked ~ main figure:not([data-tag~="performance"]),
+[value="portraiture"]:checked ~ main figure:not([data-tag~="portraiture"]),
+[value="abstraction"]:checked ~ main figure:not([data-tag~="abstraction"]),
+[value="VIDEO"]:checked ~ main figure:not([data-tag~="VIDEO"]),
+[value="scripted"]:checked ~ main figure:not([data-tag~="scripted"]),
+[value="unscripted"]:checked ~ main figure:not([data-tag~="unscripted"]),
+[value="music"]:checked ~ main figure:not([data-tag~="music"]),
+[value="about"]:checked ~ main figure:not([data-tag~="about"]),
+[value="contact"]:checked ~ main figure:not([data-tag~="contact"]){
 	display: none;
 }
 
 
-/* mobile */
+/* contact */
 
-@media screen and (max-width: 768px) {
-header {
-	flex-flow: row wrap;
-	justify-content: center;
+form {
+  width: 640px;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
+input, textarea{
+  font-family: 'IM Fell English', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+textarea {
+  resize: vertical;
+}
+
+::placeholder {
+	font-family: 'IM Fell Double Pica SC', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* narrow screen */
+
+@media screen and (max-width: 800px) {
+header {
+  width: 100%;
+	flex-flow: row wrap;
+	justify-content: center;}
+
 nav {
-	flex-flow: column nowrap;
-	width: auto;
+  width: 100%;
+  flex-flow: column nowrap;
+}
+
+form {
+  width: 100%;
 }
 
 #split { display: none; }
 
+figure img { max-height: 80vh; }
 }

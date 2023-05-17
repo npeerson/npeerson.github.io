@@ -9,110 +9,97 @@
 
 </head>
 
-
-
 <body>
-
-
 
 <header>
 <h1>Nic Peerson</h1>
 <h1 id="split">|</h1>
 <p><em>i am a twenty-something with several cameras and a domain to my name living on the stolen Coast Salish land known as vancouver, bc.
-<br> i am a graduate of Capilano University's Bosa Centre for Film & Animation, and Experimental Forest Films' inaugural 'writing is rewriting' workshop.
 <br> my pronouns are they, them, theirs.</em></p>
 </header>
 
-
-<input type="radio" id="ALL" name="tag" value="ALL" checked>
+<input type="radio" id="init" name="tag" value="init" checked>
 <input type="radio" id="PHOTO" name="tag" value="PHOTO">
-<input type="radio" id="arts" name="tag" value="arts">
-<input type="radio" id="portrait" name="tag" value="portrait">
-<input type="radio" id="abstract" name="tag" value="abstract">
+<input type="radio" id="performance" name="tag" value="performance">
+<input type="radio" id="portraiture" name="tag" value="portraiture">
+<input type="radio" id="abstraction" name="tag" value="abstraction">
 <input type="radio" id="VIDEO" name="tag" value="VIDEO">
 <input type="radio" id="scripted" name="tag" value="scripted">
 <input type="radio" id="unscripted" name="tag" value="unscripted">
 <input type="radio" id="music" name="tag" value="music">
+<input type="radio" id="about" name="tag" value="about">
+<input type="radio" id="contact" name="tag" value="contact">
+
 <nav>
-  <div id="filter-bar">
-    <ol class="filters">
-      <li>
-        <label for="ALL">ALL</label>
-      </li>
-    </ol>
-    <p>&nbsp;/&nbsp;</p>
-    <ol class="filters">
-      <li>
-        	<label for="PHOTO">PHOTO</label>
-      </li>
-      <p>(</p>
-      <li>
-        <label for="arts">arts</label>
-      </li>
-      <li>
-        <label for="portrait">portrait</label>
-      </li>
-      <li>
-        <label for="abstract">abstract</label>
-      </li>
-      <p>)</p>
-    </ol>
-    <p>&nbsp;/&nbsp;</p>
-    <ol class="filters">
-      <li>
-        <label for="VIDEO">VIDEO</label>
-      </li>
-      <p>(</p>
-      <li>
-        <label for="scripted">scripted</label>
-      </li>
-      <li>
-        <label for="unscripted">unscripted</label>
-      </li>
-      <li>
-        <label for="music">music</label>
-      </li>
-      <p>)</p>
-    </ol>
+  <div class="fgroup">
+    <label for="PHOTO">PHOTO</label>
+    <p>(</p>
+    <label for="performance">performance</label>
+    <label for="portraiture">portraiture</label>
+    <label for="abstraction">abstraction</label>
+    <p>)</p>
   </div>
-    <a href="mailto:me@nicpeerson.net">CONTACT</a>
+  <div class="fgroup">
+    <label for="VIDEO">VIDEO</label>
+    <p>(</p>
+    <label for="scripted">scripted</label>
+    <label for="unscripted">unscripted</label>
+    <label for="music">music</label>
+    <p>)</p>
+  </div>
+  <label for="about">ABOUT</label>
+  <label for="contact">CONTACT</label>
 </nav>
 
 <main>
-<div class="thumb" data-tag="PHOTO abstract"><img src="thumb/photo/abstract/crow.jpg"></div>
-<div class="thumb" data-tag="PHOTO portrait"><img src="thumb/photo/portrait/L1.jpg"></div>
-<div class="thumb" data-tag="PHOTO portrait"><img src="thumb/photo/portrait/L2.jpg"></div>
-<div class="thumb" data-tag="VIDEO scripted"><img src="thumb/video/scripted/mascmori.jpg"><p class="caption">Masculine|Moribund<br>"I'm in the mood to die for a pretty girl."<br>in post-production</p></div>
-<div class="thumb" data-tag="PHOTO arts"><img src="thumb/photo/arts/E1.jpg"><p class="caption">Autumn Jean<br>"The simultaneous creation and destruction of a self portrait by a transsexual who’s figuring her shit out."<br>Red Gate Arts Society<br>2022</p></div>
-<div class="thumb" data-tag="PHOTO arts"><img src="thumb/photo/arts/E2.jpg"><p class="caption">Autumn Jean<br>"The simultaneous creation and destruction of a self portrait by a transsexual who’s figuring her shit out."<br>Red Gate Arts Society<br>2022</p></div>
-<div class="thumb" data-tag="PHOTO portrait"><img src="thumb/photo/portrait/K1.jpg"></div>
-<div class="thumb" data-tag="PHOTO portrait"><img src="thumb/photo/portrait/K2.jpg"></div>
-<div class="thumb" data-tag="PHOTO abstract"><img src="thumb/photo/abstract/moonstar.jpg"></div>
-<div class="thumb" data-tag="VIDEO scripted"><img src="thumb/video/scripted/hervoice.jpg"><p class="caption">her voice<br>"her voice is an intimate portrait of dysphoria and discovery for a young trans woman going through vocal training."<br>2020</p></div>
-<div class="thumb" data-tag="PHOTO arts"><img src="thumb/photo/arts/JM1.jpg"><p class="caption">Jae Lew and Maliv Khondaker<br>"a new gut psycho-biome"<br>James Black Gallery<br>2022</p></div>
-<div class="thumb" data-tag="PHOTO arts"><img src="thumb/photo/arts/JM2.jpg"><p class="caption">Jae Lew and Maliv Khondaker<br>"a new gut psycho-biome"<br>James Black Gallery<br>2022</p></div>
-<div class="thumb" data-tag="PHOTO abstract"><img src="thumb/photo/abstract/taillights.jpg"></div>
-<div class="thumb" data-tag="VIDEO unscripted"><img src="thumb/video/unscripted/daydreaming.jpg"><p class="caption">Daydreaming<br>co-director: Lexi Fontaine<br>A meditation on trauma, identity, and art.<br>2020</p></div>
-<div class="thumb" data-tag="PHOTO portrait"><img src="thumb/photo/portrait/M1.jpg"></div>
-<div class="thumb" data-tag="PHOTO portrait"><img src="thumb/photo/portrait/M2.jpg"></div>
-<div class="thumb" data-tag="PHOTO arts"><img src="thumb/photo/arts/S1.jpg"><p class="caption">Saskia Cseh<br>"Worms, Bleed Me Dry!"<br>Red Gate Arts Society<br>2022</p></div>
-<div class="thumb" data-tag="PHOTO arts"><img src="thumb/photo/arts/RNE1.jpg"><p class="caption">Raw Nerve Endings<br>Victory Square<br>2021</p></div>
-<div class="thumb" data-tag="PHOTO abstract"><img src="thumb/photo/abstract/shadows.jpg"></div>
-<div class="thumb" data-tag="VIDEO music"><img src="thumb/video/music/palenorth.jpg"><p class="caption">Pale North | shed sessions<br>2019</p></div>
-<div class="thumb" data-tag="VIDEO unscripted"><img src="thumb/video/unscripted/emo.jpg"><p class="caption">E.M.O. Collective<br>Documentation of an evening including experimental film screenings, expanded cinema performance, and karaoke.<br>2019</p></div>
-<div class="thumb" data-tag="VIDEO scripted"><img src="thumb/video/scripted/rhymeandriza.jpg"><p class="caption">Rhyme & Riza (Director of Photography)<br>"A girl breaks free for her mother's expectations to chase her dreams of rapping."<br>VAFF MAMM 2019</p></div>
-<div class="thumb" data-tag="PHOTO arts"><img src="thumb/photo/arts/WUB1.jpg"><p class="caption">Wind-Up Birds<br>333<br>2017</p></div>
-<div class="thumb" data-tag="PHOTO arts"><img src="thumb/photo/arts/WUB2.jpg"><p class="caption">Wind-Up Birds<br>333<br>2017</p></div>
-<div class="thumb" data-tag="PHOTO abstract"><img src="thumb/photo/abstract/hand.jpg"></div>
-<div class="thumb" data-tag="VIDEO scripted"><img src="thumb/video/scripted/chapterclosed.jpg"><p class="caption">Chapter Closed<br>co-director: Shastina Kumar<br>"A silent demonstration of the shared trauma of domestic abuse."<br>2018</p></div>
-<div class="thumb" data-tag="PHOTO portrait"><img src="thumb/photo/portrait/J1.jpg"></div>
-<div class="thumb" data-tag="PHOTO portrait"><img src="thumb/photo/portrait/J2.jpg"></div>
-<div class="thumb" data-tag="PHOTO portrait"><img src="thumb/photo/portrait/B1.jpg"></div>
-<div class="thumb" data-tag="VIDEO scripted"><img src="thumb/video/scripted/cosmetics.jpg"><p class="caption">Cosmetics<br>"A man experiments with the boundaries of his self-expression."<br>2018</p></div>
-<div class="thumb" data-tag="VIDEO music"><img src="thumb/video/music/aquarium.jpg"><p class="caption">Aquarium<br>music video<br>2018</p></div>
-<div class="thumb" data-tag="VIDEO music"><img src="thumb/video/music/makebelieve.jpg"><p class="caption">Peter Jackson | Make Believe (Director of Photography)<br>music video<br>2018 - Nominated: Best Hip Hop Video - Dropout Independant Music Video Awards</p></div>
+<figure data-tag="PHOTO abstraction init"> <img src="gal/photo/abstraction/crow.jpg"> </figure>
+<figure data-tag="PHOTO portraiture init"><img src="gal/photo/portraiture/L1.jpg"></figure>
+<figure data-tag="PHOTO portraiture"><img src="gal/photo/portraiture/L2.jpg"></figure>
+<figure data-tag="VIDEO scripted"><img src="gal/video/scripted/mascmori.jpg"><figcaption>Masculine|Moribund<br>"I'm in the mood to die for a pretty girl."<br>in post-production</figcaption></figure>
+<figure data-tag="PHOTO performance"><img src="gal/photo/performance/E1.jpg"><figcaption>Autumn Jean<br>"The simultaneous creation and destruction of a self portraiture by a transsexual who’s figuring her shit out."<br>Red Gate performance Society<br>2022</figcaption></figure>
+<figure data-tag="PHOTO performance init"><img src="gal/photo/performance/E2.jpg"><figcaption>Autumn Jean<br>"The simultaneous creation and destruction of a self portraiture by a transsexual who’s figuring her shit out."<br>Red Gate performance Society<br>2022</figcaption></figure>
+<figure data-tag="PHOTO portraiture"><img src="gal/photo/portraiture/K1.jpg"></figure>
+<figure data-tag="PHOTO portraiture"><img src="gal/photo/portraiture/K2.jpg"></figure>
+<figure data-tag="PHOTO abstraction"><img src="gal/photo/abstraction/moonstar.jpg"></figure>
+<figure data-tag="VIDEO scripted"><img src="gal/video/scripted/hervoice.jpg"><figcaption>her voice<br>"her voice is an intimate portraiture of dysphoria and discovery for a young trans woman going through vocal training."<br>2020</figcaption></figure>
+<figure data-tag="PHOTO performance"><img src="gal/photo/performance/JM1.jpg"><figcaption>Jae Lew and Maliv Khondaker<br>"a new gut psycho-biome"<br>James Black Gallery<br>2022</figcaption></figure>
+<figure data-tag="PHOTO performance"><img src="gal/photo/performance/JM2.jpg"><figcaption>Jae Lew and Maliv Khondaker<br>"a new gut psycho-biome"<br>James Black Gallery<br>2022</figcaption></figure>
+<figure data-tag="PHOTO abstraction"><img src="gal/photo/abstraction/taillights.jpg"></figure>
+<figure data-tag="VIDEO unscripted"><img src="gal/video/unscripted/daydreaming.jpg"><figcaption>Daydreaming<br>co-director: Lexi Fontaine<br>A meditation on trauma, identity, and art.<br>2020</figcaption></figure>
+<figure data-tag="PHOTO portraiture"><img src="gal/photo/portraiture/M1.jpg"></figure>
+<figure data-tag="PHOTO portraiture"><img src="gal/photo/portraiture/M2.jpg"></figure>
+<figure data-tag="PHOTO performance"><img src="gal/photo/performance/S1.jpg"><figcaption>Saskia Cseh<br>"Worms, Bleed Me Dry!"<br>Red Gate performance Society<br>2022</figcaption></figure>
+<figure data-tag="PHOTO performance"><img src="gal/photo/performance/RNE1.jpg"><figcaption>Raw Nerve Endings<br>Victory Square<br>2021</figcaption></figure>
+<figure data-tag="PHOTO abstraction"><img src="gal/photo/abstraction/shadows.jpg"></figure>
+<figure data-tag="VIDEO music"><img src="gal/video/music/palenorth.jpg"><figcaption>Pale North | shed sessions<br>2019</figcaption></figure>
+<figure data-tag="VIDEO unscripted"><img src="gal/video/unscripted/emo.jpg"><figcaption>E.M.O. Collective<br>Documentation of an evening including experimental film screenings, expanded cinema performance, and karaoke.<br>2019</figcaption></figure>
+<figure data-tag="VIDEO scripted"><img src="gal/video/scripted/rhymeandriza.jpg"><figcaption>Rhyme & Riza (Director of Photography)<br>"A girl breaks free for her mother's expectations to chase her dreams of rapping."<br>VAFF MAMM 2019</figcaption></figure>
+<figure data-tag="PHOTO performance"><img src="gal/photo/performance/WUB1.jpg"><figcaption>Wind-Up Birds<br>333<br>2017</figcaption></figure>
+<figure data-tag="PHOTO performance"><img src="gal/photo/performance/WUB2.jpg"><figcaption>Wind-Up Birds<br>333<br>2017</figcaption></figure>
+<figure data-tag="PHOTO abstraction"><img src="gal/photo/abstraction/hand.jpg"></figure>
+<figure data-tag="VIDEO scripted"><img src="gal/video/scripted/chapterclosed.jpg"><figcaption>Chapter Closed<br>co-director: Shastina Kumar<br>"A silent demonstration of the shared trauma of domestic abuse."<br>2018</figcaption></figure>
+<figure data-tag="PHOTO portraiture"><img src="gal/photo/portraiture/J1.jpg"></figure>
+<figure data-tag="PHOTO portraiture"><img src="gal/photo/portraiture/J2.jpg"></figure>
+<figure data-tag="PHOTO portraiture"><img src="gal/photo/portraiture/B1.jpg"></figure>
+<figure data-tag="VIDEO scripted"><img src="gal/video/scripted/cosmetics.jpg"><figcaption>Cosmetics<br>"A man experiments with the boundaries of his self-expression."<br>2018</figcaption></figure>
+<figure data-tag="VIDEO music"><img src="gal/video/music/aquarium.jpg"><figcaption>Aquarium<br>music video<br>2018</figcaption></figure>
+<figure data-tag="VIDEO music"><img src="gal/video/music/makebelieve.jpg"><figcaption>Peter Jackson | Make Believe (Director of Photography)<br>music video<br>2018 - Nominated: Best Hip Hop Video - Dropout Independant Music Video Awards</figcaption></figure>
+<figure data-tag="about">
+  <p>Coming soon.</p>
+</figure>
+<figure data-tag="contact">
+  <form action="https://formsubmit.co/form@nicpeerson.net" method="POST">
+    <p>To contact me, please fill out the form below and i'll try to get back to you soon.</p>
+    <p>---</p>
+    <input type="text" name="name" placeholder="your name" required>
+    <input type="email" name="email" placeholder="your email address" required>
+    <textarea name="memory" placeholder="a treasured memory (optional)" rows=3></textarea>
+    <textarea name="textarea" name="query" placeholder="and your query" rows=6 required></textarea>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="submit" value="submit">
+  </form>
 
-
+</figure>
 </main>
 <footer>
 copyright: Nic F Peerson 2023
