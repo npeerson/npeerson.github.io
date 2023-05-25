@@ -62,6 +62,10 @@ p, a, li, label, figcaption {
   transition-duration: .5s;
 }
 
+#about {
+  max-width: 768px;
+  text-align: justify;
+}
 /*FILTER*/
 
 input[type="radio"] {
@@ -101,7 +105,7 @@ figure {
 
 figure img {
 	max-height: 75vh;
-	max-width: 100%;
+	max-width: 95%;
 	margin: 0;
 }
 
