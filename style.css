@@ -105,7 +105,7 @@ figure {
 
 figure img {
 	max-height: 75vh;
-	max-width: 95%;
+	max-width: 95vw;
 	margin: 0;
 }
 
