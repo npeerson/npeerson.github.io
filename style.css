@@ -34,7 +34,7 @@ header { flex-flow: row nowrap; }
 
 nav {
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	border-style: solid none;
 	border-width: 1px;
 }
@@ -85,7 +85,8 @@ label:hover {
 [value="PHOTO"]:checked ~ nav [for="PHOTO"],
 [value="musicians"]:checked ~ nav [for="musicians"],
 [value="poets"]:checked ~ nav [for="poets"],
-[value="eyes"]:checked ~ nav [for="eyes"],
+[value="experimentalists"]:checked ~ nav [for="experimentalists"],
+[value="portraits"]:checked ~ nav [for="portraits"],
 [value="abstractions"]:checked ~ nav [for="abstractions"],
 [value="VIDEO"]:checked ~ nav [for="VIDEO"],
 [value="scripted"]:checked ~ nav [for="scripted"],
@@ -136,7 +137,8 @@ figure {
 [value="PHOTO"]:checked ~ main figure:not([data-tag~="PHOTO"]),
 [value="musicians"]:checked ~ main figure:not([data-tag~="musicians"]),
 [value="poets"]:checked ~ main figure:not([data-tag~="poets"]),
-[value="eyes"]:checked ~ main figure:not([data-tag~="eyes"]),
+[value="experimentalists"]:checked ~ main figure:not([data-tag~="experimentalists"]),
+[value="portraits"]:checked ~ main figure:not([data-tag~="portraits"]),
 [value="abstractions"]:checked ~ main figure:not([data-tag~="abstractions"]),
 [value="VIDEO"]:checked ~ main figure:not([data-tag~="VIDEO"]),
 [value="scripted"]:checked ~ main figure:not([data-tag~="scripted"]),
