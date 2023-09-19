@@ -80,6 +80,7 @@ input[type="radio"] {
 
 .fgroup {
   display: inline;
+  text-align: center;
 }
 
 label:hover {
@@ -109,15 +110,17 @@ figure {
 	margin: 16px;
 }
 
-figure img {
+figure img, video {
 	max-height: 75vh;
 	max-width: 95vw;
 	margin: 0;
 }
 
+
+
 figure figcaption {
   position: absolute;
-  max-width: 30em;
+  max-width: 33em;
   bottom: 0;
   right: 0;
   padding: 1em;
@@ -125,6 +128,7 @@ figure figcaption {
   background-color: #ffffff;
   opacity: 0%;
   transition-duration: 1s;
+  text-align: justify;
 }
 
 figure:hover figcaption {
@@ -199,5 +203,5 @@ form {
 
 #split { display: none; }
 
-figure img { max-height: 80vh; }
+figure img, video { max-height: 80vh; }
 }
