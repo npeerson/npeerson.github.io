@@ -46,6 +46,10 @@ main {
 	justify-content: center;
 }
 
+footer {
+  display: block;
+  text-align: center;
+}
 h1 {
 	flex: 0 0 auto;
 	font-size: 4em;
