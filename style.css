@@ -73,6 +73,7 @@ p, a, li, label, figcaption {
   font-family: 'IM Fell English', sans-serif;
   font-size: 1.1em;
 }
+
 /*FILTER*/
 
 input[type="radio"] {
@@ -112,7 +113,7 @@ figure {
 }
 
 figure img, video {
-	max-height: 50vh;
+	max-height: 40vh;
 	max-width: 95vw;
 	margin: 0;
 }
@@ -135,6 +136,7 @@ figure figcaption {
 figure:hover figcaption {
 	opacity: 100%;
 }
+
 
 figure {
 	opacity: 1;
