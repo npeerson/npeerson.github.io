@@ -34,7 +34,7 @@ header { flex-flow: row nowrap; }
 
 nav {
 	flex-flow: row wrap;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	border-style: solid none;
 	border-width: 1px;
 }
@@ -47,6 +47,7 @@ main {
 }
 
 footer {
+  width: 512px;
   display: block;
   text-align: center;
 }
@@ -69,6 +70,8 @@ p, a, li, label, figcaption {
 #about {
   max-width: 768px;
   text-align: justify;
+  font-family: 'IM Fell English', sans-serif;
+  font-size: 1.1em;
 }
 /*FILTER*/
 
@@ -88,9 +91,7 @@ label:hover {
 }
 
 [value="PHOTO"]:checked ~ nav [for="PHOTO"],
-[value="musicians"]:checked ~ nav [for="musicians"],
-[value="poets"]:checked ~ nav [for="poets"],
-[value="experimentalists"]:checked ~ nav [for="experimentalists"],
+[value="performance"]:checked ~ nav [for="performance"],
 [value="portraits"]:checked ~ nav [for="portraits"],
 [value="abstractions"]:checked ~ nav [for="abstractions"],
 [value="VIDEO"]:checked ~ nav [for="VIDEO"],
@@ -111,7 +112,7 @@ figure {
 }
 
 figure img, video {
-	max-height: 75vh;
+	max-height: 50vh;
 	max-width: 95vw;
 	margin: 0;
 }
@@ -128,7 +129,7 @@ figure figcaption {
   background-color: #ffffff;
   opacity: 0%;
   transition-duration: 1s;
-  text-align: justify;
+  text-align: left;
 }
 
 figure:hover figcaption {
@@ -143,9 +144,7 @@ figure {
 
 [value="init"]:checked ~ main figure:not([data-tag~="init"]),
 [value="PHOTO"]:checked ~ main figure:not([data-tag~="PHOTO"]),
-[value="musicians"]:checked ~ main figure:not([data-tag~="musicians"]),
-[value="poets"]:checked ~ main figure:not([data-tag~="poets"]),
-[value="experimentalists"]:checked ~ main figure:not([data-tag~="experimentalists"]),
+[value="performance"]:checked ~ main figure:not([data-tag~="performance"]),
 [value="portraits"]:checked ~ main figure:not([data-tag~="portraits"]),
 [value="abstractions"]:checked ~ main figure:not([data-tag~="abstractions"]),
 [value="VIDEO"]:checked ~ main figure:not([data-tag~="VIDEO"]),
@@ -168,7 +167,7 @@ form {
 
 input, textarea{
   font-family: 'IM Fell English', sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 400;
   border: none;
   border-bottom: 1px solid black;
@@ -195,6 +194,10 @@ header {
 nav {
   width: 95%;
   flex-flow: column nowrap;
+}
+
+footer {
+  width: 95%;
 }
 
 form {
