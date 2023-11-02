@@ -135,14 +135,14 @@ figure figcaption {
   text-align: left;
 }
 
-figure:not(#contact):hover {
+figure:not(.nozoom):hover {
   cursor: zoom-in;
   & figcaption {
     opacity: 100%;
   }
 }
 
-figure:not(#contact):active {
+figure:not(.nozoom):active {
   cursor: none;
   z-index: 2;
   position: fixed;
@@ -157,7 +157,7 @@ figure:not(#contact):active {
 }
 
 
-figure:not(#contact):active ~ #hider {
+figure:not(.nozoom):active ~ #hider {
   display: block;
 }
 
