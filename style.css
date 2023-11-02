@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  z-index: 0;
 	font-family: 'IM Fell Double Pica SC', sans-serif;
 	background-color: white;
   display: flex;
@@ -44,6 +45,7 @@ main {
 	flex-flow: row wrap;
 	width: 100%;
 	justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -108,17 +110,17 @@ label:hover {
 /*gallery */
 
 figure {
-	position: relative;
+  position: relative;
 	margin: 16px;
 }
 
 figure img, video {
 	max-height: 40vh;
-	max-width: 95vw;
+	max-width: 90vw;
 	margin: 0;
+
+
 }
-
-
 
 figure figcaption {
   position: absolute;
@@ -133,15 +135,42 @@ figure figcaption {
   text-align: left;
 }
 
-figure:hover figcaption {
-	opacity: 100%;
+figure:not(#contact):hover {
+  cursor: zoom-in;
+  & figcaption {
+    opacity: 100%;
+  }
+}
+
+figure:not(#contact):active {
+  cursor: none;
+  z-index: 2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  transform: translate(-50%, -50%);
+
+  & img, video {
+    max-height: 90vh;
+  }
 }
 
 
-figure {
-	opacity: 1;
-	transition-duration: 1s;
+figure:not(#contact):active ~ #hider {
+  display: block;
+}
 
+#hider {
+  z-index: 1;
+    width: 100%;
+    height: 100vh;
+  display: none;
+  background-color: white;
+
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 [value="init"]:checked ~ main figure:not([data-tag~="init"]),
