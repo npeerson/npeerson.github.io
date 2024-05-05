@@ -83,29 +83,37 @@ input[type="radio"] {
 }
 
 /* filter labels */
-
-.fgroup {
-  display: inline;
-  text-align: center;
+.navblock {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
+
+hr {  width:0;}
 
 label:hover {
   color: #667788;
 }
 
 [value="PHOTO"]:checked ~ nav [for="PHOTO"],
-[value="performance"]:checked ~ nav [for="performance"],
-[value="portraits"]:checked ~ nav [for="portraits"],
-[value="abstractions"]:checked ~ nav [for="abstractions"],
 [value="VIDEO"]:checked ~ nav [for="VIDEO"],
-[value="scripted"]:checked ~ nav [for="scripted"],
-[value="unscripted"]:checked ~ nav [for="unscripted"],
-[value="music"]:checked ~ nav [for="music"],
+[value="red"]:checked ~ nav [for="red"],
+[value="yellow"]:checked ~ nav [for="yellow"],
+[value="green"]:checked ~ nav [for="green"],
+[value="blue"]:checked ~ nav [for="blue"],
+[value="purple"]:checked ~ nav [for="purple"],
 [value="about"]:checked ~ nav [for="about"],
 [value="contact"]:checked ~ nav [for="contact"]
  {
 	color: #7766cc;
 }
+
+
+[value="red"]:checked ~ nav [for="red"] {color: #ff0000;}
+[value="yellow"]:checked ~ nav [for="yellow"] {color: #ffff00;}
+[value="green"]:checked ~ nav [for="green"] {color: #00FF00;}
+[value="blue"]:checked ~ nav [for="blue"] {color: #0000ff;}
+[value="purple"]:checked ~ nav [for="purple"] {color: #ff00ff;}
 
 /*gallery */
 
@@ -115,7 +123,7 @@ figure {
 }
 
 figure img, video {
-	max-height: 40vh;
+	max-height: 50vh;
 	max-width: 90vw;
 	margin: 0;
 
@@ -175,13 +183,12 @@ figure:not(.nozoom):active ~ #hider {
 
 [value="init"]:checked ~ main figure:not([data-tag~="init"]),
 [value="PHOTO"]:checked ~ main figure:not([data-tag~="PHOTO"]),
-[value="performance"]:checked ~ main figure:not([data-tag~="performance"]),
-[value="portraits"]:checked ~ main figure:not([data-tag~="portraits"]),
-[value="abstractions"]:checked ~ main figure:not([data-tag~="abstractions"]),
 [value="VIDEO"]:checked ~ main figure:not([data-tag~="VIDEO"]),
-[value="scripted"]:checked ~ main figure:not([data-tag~="scripted"]),
-[value="unscripted"]:checked ~ main figure:not([data-tag~="unscripted"]),
-[value="music"]:checked ~ main figure:not([data-tag~="music"]),
+[value="red"]:checked ~ main figure:not([data-tag~="red"]),
+[value="yellow"]:checked ~ main figure:not([data-tag~="yellow"]),
+[value="green"]:checked ~ main figure:not([data-tag~="green"]),
+[value="blue"]:checked ~ main figure:not([data-tag~="blue"]),
+[value="purple"]:checked ~ main figure:not([data-tag~="purple"]),
 [value="about"]:checked ~ main figure:not([data-tag~="about"]),
 [value="contact"]:checked ~ main figure:not([data-tag~="contact"]){
 	display: none;
