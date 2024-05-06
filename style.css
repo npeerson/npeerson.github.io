@@ -123,7 +123,7 @@ figure {
 }
 
 figure img, video {
-	max-height: 50vh;
+	max-height: 80vh;
 	max-width: 90vw;
 	margin: 0;
 
@@ -144,12 +144,12 @@ figure figcaption {
 }
 
 figure:not(.nozoom):hover {
-  cursor: zoom-in;
+  /* cursor: zoom-in; */
   & figcaption {
     opacity: 100%;
   }
 }
-
+/*
 figure:not(.nozoom):active {
   cursor: none;
   z-index: 2;
@@ -168,7 +168,7 @@ figure:not(.nozoom):active {
 figure:not(.nozoom):active ~ #hider {
   display: block;
 }
-
+*/
 #hider {
   z-index: 1;
     width: 100%;
@@ -244,5 +244,9 @@ form {
 
 #split { display: none; }
 
+figure { margin: 8px; }
+
 figure img, video { max-height: 80vh; }
+
 }
+
